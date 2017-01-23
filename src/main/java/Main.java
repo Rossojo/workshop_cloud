@@ -26,11 +26,6 @@ public class Main {
     staticFileLocation("/public");
 
     get("/hello", (req, res) -> {
-      RelativisticModel.select();
-
-      String energy = System.getenv().get("ENERGY");
-
-//      Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
       Map<String, Object> attributes = new HashMap<>();
 
       attributes.put("welcome_msg", "Hello World! Enter data");
@@ -38,6 +33,8 @@ public class Main {
       return new ModelAndView(attributes, "create_user.ftl");
 //      return "E=mc^2: " + energy + " = " + m.toString();
     }, new FreeMarkerEngine());
+
+    post("/hello", (req, res) -> req.params("vname"));
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
