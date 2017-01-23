@@ -7,7 +7,7 @@
 <body>
     <h1>Willkommen!</h1>
     ${welcome_msg}
-    <form method="post">
+    <form>
         <label for="vname">Vorname:
             <input id="vname" name="vname">
         </label><br>
