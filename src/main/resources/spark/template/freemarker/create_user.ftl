@@ -6,7 +6,7 @@
 
 <body>
     <h1>Willkommen!</h1>
-    Bitte tragen Sie ihre Daten ein:
+    ${welcome_msg}
     <form>
         <label for="vname">Vorname:
             <input id="vname" name="vname">

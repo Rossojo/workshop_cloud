@@ -33,6 +33,8 @@ public class Main {
 //      Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
       Map<String, Object> attributes = new HashMap<>();
 
+      attributes.put("welcome_msg", "Hello World! Enter data");
+
       return new ModelAndView(attributes, "create_user.ftl");
 //      return "E=mc^2: " + energy + " = " + m.toString();
     }, new FreeMarkerEngine());
