@@ -27,12 +27,12 @@ public class Main {
 
     get("/hello", (req, res) -> {
       Map<String, Object> attributes = new HashMap<>();
-      if (req.attributes().isEmpty()) {
+      if (req.queryParams().isEmpty()) {
         attributes.put("welcome_msg", "Hello World! Enter data");
 
         return new ModelAndView(attributes, "create_user.ftl");
       }else{
-        String vname= (String) req.attribute("vname");
+        String vname= (String) req.queryParams("vname");
         attributes.put("welcome_msg", "Hello " + vname);
         return new ModelAndView(attributes, "create_user.ftl");
       }
