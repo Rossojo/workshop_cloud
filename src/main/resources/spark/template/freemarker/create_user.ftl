@@ -7,7 +7,7 @@
 <body>
     <h1>Willkommen!</h1>
     ${welcome_msg}
-    <form>
+    <form method="post">
         <label for="vname">Vorname:
             <input id="vname" name="vname">
         </label><br>
@@ -20,7 +20,7 @@
         <input type="radio" id="weibl" name="geschlecht" value="1"><br>
         <label for="alter">über 18:</label>
         <input type="checkbox" id="alter" name="alter"><br>
-        <input type="submit" value="senden" formmethod="POST"><br>
+        <input type="submit" value="senden"><br>
     </form>
 
 </body>
