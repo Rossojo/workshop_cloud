@@ -10,17 +10,17 @@
     <form>
         <label for="vname">Vorname:
             <input id="vname" name="vname">
-        </label>
+        </label><br>
         <label for="zname">Zuname:
             <input id="zname" name="zname">
-        </label>
-        <label for="männl">männlich</label>
-        <input type="radio" id="männl" name="geschlecht" value="0">
-        <label for="weibl">weiblich</label>
-        <input type="radio" id="weibl" name="geschlecht" value="1">
-        <label for="alter">über 18:</label>
-        <input type="checkbox" id="alter" name="alter">
-        <input type="submit" value="senden">
+        </label><br>
+        <label for="männl">männlich</label><br>
+        <input type="radio" id="männl" name="geschlecht" value="0"><br>
+        <label for="weibl">weiblich</label><br>
+        <input type="radio" id="weibl" name="geschlecht" value="1"><br>
+        <label for="alter">über 18:</label><br>
+        <input type="checkbox" id="alter" name="alter"><br>
+        <input type="submit" value="senden"><br>
     </form>
 
 </body>
