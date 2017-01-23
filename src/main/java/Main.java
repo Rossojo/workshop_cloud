@@ -35,7 +35,7 @@ public class Main {
 
       return new ModelAndView(attributes, "create_user.ftl");
 //      return "E=mc^2: " + energy + " = " + m.toString();
-    });
+    }, new FreeMarkerEngine());
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();

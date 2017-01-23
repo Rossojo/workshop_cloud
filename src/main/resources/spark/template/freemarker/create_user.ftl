@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<#include "header.ftl">
+    <title>User input</title>
 </head>
 
 <body>
