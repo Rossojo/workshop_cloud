@@ -20,7 +20,7 @@
         <input type="radio" id="weibl" name="geschlecht" value="1"><br>
         <label for="alter">über 18:</label>
         <input type="checkbox" id="alter" name="alter"><br>
-        <input type="submit" value="senden"><br>
+        <input type="submit" value="senden" formmethod="POST"><br>
     </form>
 
 </body>
