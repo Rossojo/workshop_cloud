@@ -31,7 +31,9 @@ public class Main {
       String energy = System.getenv().get("ENERGY");
 
 //      Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
-      return "<html><body><h1>Willkommen!</h1></body></html>";
+      Map<String, Object> attributes = new HashMap<>();
+
+      return new ModelAndView(attributes, "create_user.ftl");
 //      return "E=mc^2: " + energy + " = " + m.toString();
     });
 
